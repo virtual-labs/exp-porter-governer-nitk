@@ -1,0 +1,1091 @@
+/* rem and em don not depend on html font size in media queries, Instead 1rem = 1em = 16px
+rem: root font size
+em:current font size
+*/
+
+/* *************only screen******* */
+
+/* **************************** */
+/* Below 1344px (Smaller Desktops) */
+/* **************************** */
+
+@media (max-width: 1540px) {
+  #partTitle {
+    position: absolute;
+    left: 180px;
+    top: 70px;
+    font-size: 2.5rem;
+  }
+  #dropPivot {
+    position: absolute;
+    left: 408px;
+    top: 182px;
+    
+  }
+  #dropFlyBall{
+    position: absolute;
+    left: 549px;
+    top: 240px;
+  }
+  #dropConnectingRod{
+    position: absolute;
+    left: 420px;
+    top: 355px;
+
+  }
+  #graph {
+    position: absolute;
+      left: -92px;
+      top: 75px;
+      width: 352px;
+      height: 304px;
+  }
+  #dropSpindle{
+    position: absolute;
+        left: 133px;
+        top: 390px;
+  }
+  #dropSleeve{
+    position: absolute;
+    left: 46px;
+    top: 309px;
+  }
+  #dropExtendedArm{
+    position: absolute;
+    left: 54px;
+    top:269px;
+  }
+  #dropArm{
+    position: absolute;
+    left: 90px;
+    top: 183px;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+  }
+  #partImage {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+  }
+  fieldset {
+    width: 140%;
+    height: auto;
+  }
+  #exp {
+    position: relative;
+    left: -242px;
+    top: 150px;
+    font-size: 2rem;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 130px;
+  }
+}
+@media (max-width: 1450px) {
+  #partTitle {
+    position: absolute;
+    left: 180px;
+    top: 70px;
+    font-size: 2.5rem;
+  }
+  #dropPivot {
+    position: absolute;
+    left: 371px;
+    top: 178px;
+
+  }
+  #dropFlyBall{
+    position: absolute;
+    left: 498px;
+    top: 229px;
+
+  }
+  #dropConnectingRod{
+    position: absolute;
+        left: 380px;
+        top: 333px;
+  }
+  #dropSpindle{
+    position: absolute;
+    left: 117px;
+    top: 355px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 150px;
+    left: 41px;
+    top: 290px;
+  }
+  #dropExtendedArm{
+    position: absolute;
+    left: 56px;
+    top:250px;
+  }
+  #dropArm{
+    position: absolute;
+    left: 80px;
+    top: 178px;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
+  }
+  #partImage {
+    position: absolute;
+    left: 145px;
+    top: 150px;
+    width: 352px;
+  }
+  fieldset {
+    width: 140%;
+    height: auto;
+  }
+  #exp {
+    position: relative;
+    left: -242px;
+    top: 150px;
+    font-size: 2rem;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 60px;
+  }
+}
+
+/* **************************** */
+/* Below 1200px (Lanscape Tablets) */
+/* **************************** */
+
+@media (max-width: 75em) {
+  body {
+    width: 100%;
+    margin: unset;
+  }
+  
+  .title-div h1 {
+    font-size: 2.5rem;
+  }
+  .task-title {
+    font-size: 2rem;
+  }
+  .tool-menu {
+    font-size: 2rem;
+    gap: 2rem;
+  }
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .ctrl-icons {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+  }
+  .div__control img {
+    width: 3rem;
+    height: 2.8rem;
+  }
+  #partTitle {
+    position: absolute;
+    left: 250px;
+    top: 85px;
+    font-size: 2.5rem;
+  }
+  #dropPivot {
+    position: absolute;
+    left: 522px;
+    top: 195px;
+  }
+  #dropFlyBall{
+    position: absolute;
+    left: 656px;
+    top: 267px;
+  }
+  #dropConnectingRod{
+    position: absolute;
+        left: 523px;
+        top: 412px;
+  }
+  #dropSpindle{
+    position: absolute;
+        left: 252px;
+        top: 453px;
+  }
+  #dropSleeve{
+    position: absolute;
+    left: 170px;
+    top: 356px;
+    width: 148px;
+
+  }
+  #dropExtendedArm{
+    position: absolute;
+    left: 109px;
+    top: 292px;
+  }
+  #dropArm{
+    position: absolute;
+    left: 222px;
+    top: 194px;
+  }
+  #partImage {
+    position: absolute;
+    height: 350px;
+    width: 365px;
+    left: 285px;
+    top: 150px;
+  }
+  #exp {
+    position: relative;
+    left: -285px;
+    top: 201px;
+    font-size: 2rem;
+    height: 20px;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 80px;
+  }
+  fieldset {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+/* **************************** */
+/* Below 944px ( Tablets) */
+/* **************************** */
+
+@media (max-width: 59em) {
+  .tool-link:link,
+  .tool-link:visited {
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    flex-direction: column;
+  }
+
+  .title-div h1 {
+    font-size: 2rem;
+  }
+
+  .main__task-div {
+    height: auto;
+  }
+ 
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .tool-list span {
+    font-size: 1rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 275px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .copytext {
+    margin-bottom: 70px;
+  }
+  .circuit-dia img {
+    width: 50%;
+    position: relative;
+    top: -68px;
+    margin-left: -50px;
+}
+#fb {
+  position: relative;
+  left: 18px;
+  font-size: 2.5rem;
+}
+#eqn {
+  position: relative;
+  left: 10px;
+  top: 0px;
+  font-size: 2.5rem;
+}
+#graph {
+  position: absolute;
+  left: 205px;
+  top: 165px;
+  height: 300px;
+  width: 300px;
+}
+fieldset {
+  width: 90%;
+  height: auto;
+}
+#exp {
+	position: relative;
+  left: 30px;
+  top: -405px;
+  font-size: 2rem;
+}
+#expTitle, #calc, #gParts {
+  margin-left: 160px;
+}
+#partTitle {
+  position: absolute;
+  font-size: 2.5rem;
+  left: 235px;
+  top: 80px;
+}
+#dropPivot {
+  position: absolute;
+  left: 455px;
+  top: 205px;
+}
+#dropFlyBall{
+  position: absolute;
+  left: 577px;
+  top: 279px;
+}
+#dropConnectingRod{
+  position: absolute;
+  left: 458px;
+  top: 423px;
+}
+#dropSpindle{
+  position: absolute;
+  left: 200px;
+  top: 464px;
+}
+#dropSleeve{
+  position: absolute;
+        /* width: 103px; */
+        left: 120px;
+        top: 364px;
+        width: 140px;
+}
+#dropExtendedArm{
+  position: absolute;
+  left: 117px;
+  top:297px;
+}
+#dropArm{
+  position: absolute;
+  left: 158px;
+  top:208px;
+}
+#partImage {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 223px;
+  top: 160px;
+}
+
+}
+
+/* **************************** */
+/* Below 820px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 48em) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 200px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .copytext {
+    margin-bottom: 80px;
+  }
+  .tool-list span {
+    font-size: 1.6rem;
+  }
+  .circuit-dia img {
+    width: 50%;
+    position: relative;
+    top: -30px;
+    margin-left: -70px;
+}
+#fb {
+  position: relative;
+    left: -20px;
+    top: 38px;
+    font-size: 2rem;
+}
+#eqn {
+  position: relative;
+  left: 6px;
+  font-size: 2.5rem;
+}
+#graph {
+  position: absolute;
+  left: 180px;
+  top: 170px;
+  height: 300px;
+  width: 300px;
+}
+fieldset {
+  width: 90%;
+  height: auto;
+}
+#exp {
+  position: relative;
+  left: 40px;
+  top: -240px;
+  font-size: 2rem;
+}
+#expTitle, #calc, #gParts {
+  margin-left: 145px;
+}
+#partTitle {
+  position: absolute;
+  left: 220px;
+  top: 79px;
+  font-size: 2.3rem;
+}
+#dropPivot {
+  position: absolute;
+  left: 417px;
+  top: 196px;
+}
+#dropFlyBall{
+  position: absolute;
+        left: 521px;
+        top: 260px;
+}
+#dropConnectingRod{
+  position: absolute;
+  left: 423px;
+  top: 382px;
+}
+#dropSpindle{
+  position: absolute;
+  width: 99px;
+  left: 187px;
+  top: 418px;
+}
+#dropSleeve{
+  position: absolute;
+  left: 112px;
+  top: 335px;
+  width: 141px;
+}
+#dropExtendedArm{
+  position: absolute;
+  left: 80px;
+  top:275px;
+}
+#dropArm{
+  position: absolute;
+  left: 159px;
+  top: 197px;
+
+}
+#partImage {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 220px;
+  top: 160px;
+}
+
+}
+
+/* **************************** */
+/* Below 704px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 44em) {
+  #graph {
+    position: absolute;
+    left: -9px;
+    top: 170px;
+    height: 300px;
+    width: 300px;
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+  }
+  .copytext {
+    margin-bottom: 80px;
+  }
+  .img-div {
+    flex-direction: column;
+  }
+  .title-div {
+    gap: 0rem;
+    text-align: center;
+  }
+  .round {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+  .circuit-dia {
+    width: 40%;
+  }
+  .cross-img {
+    width: 60%;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 150px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .circuit-dia img {
+    width: 150%;
+    position: relative;
+    top: -15px;
+    margin-left: -85px;
+}
+#fb {
+  position: relative;
+    left: 18px;
+    top: 45px;
+    font-size: 2rem;
+}
+#eqn {
+  position: relative;
+  left: 20px;
+  top: -25px;
+  font-size: 2rem;
+}
+/* #graph {
+  position: absolute;
+  left: -57px;
+  top: 130px;
+  height: 300px;
+  width: 300px;
+} */
+fieldset {
+  width: 90%;
+  height: auto;
+}
+#exp {
+  position: relative;
+  left: 30px;
+  top: -240px;
+  font-size: 1.8rem;
+}
+#expTitle, #calc, #gParts {
+  margin-left: 100px;
+}
+#partTitle {
+  position: absolute;
+  left: 150px;
+  top: 80px;
+  font-size: 2rem;
+}
+#dropPivot {
+  position: absolute;
+  left: 326px;
+  top: 199px;
+}
+#dropFlyBall{
+  position: absolute;
+  left: 409px;
+  top: 252px;
+
+}
+#dropConnectingRod{
+  position: absolute;
+  left: 323px;
+  top: 357px;
+}
+#dropSpindle{
+  position: absolute;
+  left: 115px;
+  top: 386px;
+}
+#dropSleeve{
+  position: absolute;
+        left: 41px;
+        top: 314px;
+        width: 153px;
+}
+#dropExtendedArm{
+  position: absolute;
+  left: 50px;
+  top:260px;
+}
+#dropArm{
+  position: absolute;
+  left: 99px;
+  top: 200px;
+}
+#partImage {
+  position: absolute;
+  width: 240px;
+  height: 252px;
+  left: 165px;
+  top: 170px;
+}
+}
+
+
+/* **************************** */
+/* Below 540px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 34em) {
+  .container {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  .copytext {
+    margin-bottom: 70px;
+  }
+  .title-div h1 {
+    font-size: 1.6rem;
+  }
+
+  .logo-div {
+    width: 4.5rem;
+  }
+  .div__control {
+    gap: 2rem;
+  }
+  .ctrl-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .tool-menu {
+    gap: 1.5rem;
+  }
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .task-title {
+    font-size: 1.7rem;
+  }
+  label,
+  p {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .main {
+    gap: 0.5rem;
+  }
+  .main-section {
+    gap: 0.5rem;
+  }
+  .sidebar {
+    border-radius: 0;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 120px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .div__control img {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+  .tooltip {
+    font-size: 1rem;
+  }
+  .circuit-dia img {
+    width: 200%;
+    position: relative;
+    top: -35px;
+    margin-left: -100px;
+}
+#fb {
+  position: relative;
+  width: 120%;
+  font-size: 2rem;
+}
+#eqn {
+  position: relative;
+  left: 0px;
+  top: -20px;
+  font-size: 2rem;
+}
+#graph {
+  position: absolute;
+    left: -75px;
+    top: 145px;
+    height: 300px;
+    width: 300px;
+}
+fieldset {
+  width: 90%;
+  height: auto;
+}
+#exp {
+  position: relative;
+  left: 20px;
+  top: -250px;
+  font-size: 1.5rem;
+}
+#expTitle, #calc, #gParts {
+  margin-left: 80px;
+}
+#partTitle {
+  position: absolute;
+  left: 100px;
+  top: 70px;
+  font-size: 2rem;
+}
+#dropPivot {
+  position: absolute;
+  width: 78px;
+  left: 267px;
+  top: 199px;
+}
+#dropFlyBall{
+  position: absolute;
+  width: 95px;
+  left: 349px;
+  top: 252px;
+}
+#dropConnectingRod{
+  position: absolute;
+  width: 155px;
+  left: 266px;
+  top: 356px;
+}
+#dropSpindle{
+  position: absolute;
+  width: 99px;
+  left: 67px;
+  top: 384px;
+}
+#dropSleeve{
+  position: absolute;
+        width: 103px;
+        left: 42px;
+        top: 313px;
+}
+#dropExtendedArm{
+  position: absolute;
+  width: 120px;
+  left: 15px;
+  top:266px;
+}
+#dropArm{
+  position: absolute;
+  width: 77px;
+  left: 59px;
+  top: 197px;
+}
+#partImage {
+  position: absolute;
+  width: 240px;
+  height: 252px;
+  left: 112px;
+  top: 170px;
+}
+select {
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 70%;
+}
+}
+@media (max-width: 28em) {
+  #exp {
+    position: relative;
+    left: 20px;
+    top: -250px;
+    font-size: 1.5rem;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 65px;
+  }
+  #partTitle {
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    font-size: 2rem;
+  }
+  #dropPivot {
+    position: absolute;
+    width: 78px;
+    left: 230px;
+    top: 198px;
+  }
+  #dropFlyBall{
+    position: absolute;
+    width: 95px;
+    left: 278px;
+    top: 249px;
+  }
+  #dropConnectingRod{
+    position: absolute;
+    width: 130px;
+    left: 233px;
+    top: 351px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 99px;
+    left: 47px;
+    top: 378px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 103px;
+    left: 22px;
+    top: 309px;
+  }
+  #dropExtendedArm{
+    position: absolute;
+    width: 120px;
+    left: 5px;
+    top: 260px;
+  }
+  #dropArm{
+    position: absolute;
+        width: 77px;
+        left: 42px;
+        top: 198px;
+  }
+  #partImage {
+    position: absolute;
+    width: 190px;
+    height: 245px;
+    left: 94px;
+    top: 170px;
+  }
+}
+@media (max-width: 24em) {
+  .container {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  .title-div h1 {
+    font-size: 1.6rem;
+  }
+
+  .logo-div {
+    width: 4.5rem;
+  }
+  .div__control {
+    gap: 2rem;
+  }
+  .ctrl-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .tool-menu {
+    gap: 1.5rem;
+  }
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .task-title {
+    font-size: 1.7rem;
+  }
+  label,
+  p {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  select {
+    display: inline-block;
+    font-size: 1.2rem;
+    width: 65%;
+  }
+  .main {
+    gap: 0.5rem;
+  }
+  .main-section {
+    gap: 0.5rem;
+  }
+  .sidebar {
+    border-radius: 0;
+  }
+  .canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 95px;
+    border-top: 1px solid rgba(177, 176, 176, 0.855);
+  }
+  .div__control img {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+  .tooltip {
+    font-size: 1rem;
+  }
+  .circuit-dia img {
+    width: 200%;
+    position: relative;
+    margin-left: -65px;
+  }
+  #fb {
+    position: relative;
+    width: 150%;
+    left: 0px;
+    top: 10px;
+    font-size: 2rem;
+  }
+  #eqn {
+    position: relative;
+    left: 0px;
+    top: -42px;
+    font-size: 2rem;
+  }
+  #graph {
+    position: absolute;
+      left: -92px;
+      top: 75px;
+      height: 300px;
+      width: 300px;
+  }
+  fieldset {
+    width: 90%;
+    height: auto;
+  }
+  #exp {
+    position: relative;
+    left: 20px;
+    top: -220px;
+    font-size: 1.3rem;
+  }
+  #expTitle, #calc, #gParts {
+    margin-left: 50px;
+  }
+  #partTitle {
+    position: absolute;
+    width: 80%;
+    left: 35px;
+    top: 65px;
+    font-size: 2rem;
+  }
+  #dropPivot {
+    position: absolute;
+    width: 78px;
+    left: 218px;
+    top: 181px;
+  }
+  #dropFlyBall{
+    position: absolute;
+    width: 65px;
+    left: 277px;
+    top: 217px;
+  }
+  #dropConnectingRod{
+    position: absolute;
+    width: 88px;
+    left: 219px;
+    top: 290px;
+  }
+  #dropSpindle{
+    position: absolute;
+    width: 99px;
+    left: 32px;
+    top: 308px;
+  }
+  #dropSleeve{
+    position: absolute;
+    width: 103px;
+    left: 20px;
+    top: 260px;
+  }
+  #dropExtendedArm{
+    position: absolute;
+    width: 106px;
+    left: 5px;
+    top: 224px;
+  }
+  #dropArm{
+    position: absolute;
+    width: 77px;
+    left: 40px;
+    top: 180px;
+  }
+  #partImage {
+    position: absolute;
+        width: 165px;
+        height: 173px;
+        left: 108px;
+        top: 165px;
+  }
+  .copytext {
+    margin-bottom: 70px;
+  }
+}
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
