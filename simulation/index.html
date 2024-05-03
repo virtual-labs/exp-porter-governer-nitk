@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dynamics of Machine Lab - NITK</title>
+	<script type="text/javascript" src= "js/jquery.min.js"></script>
+	<script type="text/javascript" src= "js/jquery-ui.min.js"></script>
+	<script type="application/json" src='js/jquery.min.map'></script>
+	<script type="text/javascript" src= "js/MOMscript.js"></script>
+	<script src="js/graph.ob.js"></script>
+	<script src="js/graph_use.ob.js"></script>
+	<script src="js/graph_use2.ob.js"></script>
+	<link href="css/mathstyle.css" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@299;290;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"/>
+	<link rel="stylesheet" href="css/general.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/query.css" />
+	<script defer src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script defer src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script defer type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script defer src="js/script.js"></script>
+</head>
+<body onload="editcss(); startsim(); varinit();printcomment();">
+
+	<noscript>
+		The simulation requires JavaScript to be enabled.
+	</noscript>
+	<div class="title-div-container">
+		<div class="title-div">
+		  <div class="logo-div">
+			<a href="#"><img src="./images/logo.png" alt="Logo" class="logo" /></a>
+		  </div>
+		  <h1>Porter Governor</h1>
+		</div>
+	  </div>
+	  <div class="container">
+		<div class="sidebar">
+			<ul class="tool-menu">
+			  <li class="tool-list">
+				<a href="#simulation" class="tool-link" title="Simulation"
+				  ><svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="#089B93"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="#ffffff"
+					class="icons"
+					>
+					<path
+					  stroke-linecap="round"
+					  stroke-linejoin="round"
+					  d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z"
+					/>
+				  </svg></a>
+				  <span>Simulation</span>
+			  </li>
+			  <li class="tool-list">
+				<a href="#variables" class="tool-link" title="Variables"
+				  ><svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icons"
+				  >
+					<path
+					  stroke-linecap="round"
+					  stroke-linejoin="round"
+					  d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09"
+					/>
+				  </svg></a>
+	
+				  <span>Variables</span>
+			  </li>
+			 
+			  <li class="tool-list">
+				<a href="#controls" class="tool-link" title="Comments">
+					<svg width="11.655954mm" height="11.110571mm" viewBox="0 0 11.655954 11.110571"
+						version="1.1" id="svg1" inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+						sodipodi:docname="settings.svg" inkscape:export-filename="settings.svg"
+						inkscape:export-xdpi="96" inkscape:export-ydpi="96"
+						xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+						xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+						xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+						<sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000"
+							borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0"
+							inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1"
+							inkscape:document-units="mm" inkscape:zoom="1.9830139" inkscape:cx="176.75116"
+							inkscape:cy="510.08215" inkscape:window-width="1920" inkscape:window-height="1001"
+							inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1"
+							inkscape:current-layer="layer1" />
+						<defs id="defs1" />
+						<g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"
+							transform="translate(-41.780725,-129.40199)">
+							<path
+								style="opacity:0.99;fill:#e2e8f0;stroke:#fafffe;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+								d="m 53.283207,131.63658 c 0.0665,-1.09363 -0.83388,-2.0402 -1.91841,-2.02139 l -7.5608,-0.0632 c -0.89457,0.0108 -1.731755,0.58444 -1.805563,1.51605 l -0.06771,7.93816 c 0.0028,0.74142 0.267311,1.29744 1.089383,1.35637 l 8.72837,-0.0298 c 1.01826,-0.007 1.64199,-0.14246 1.51216,-1.62132 z"
+								id="path1079-0" sodipodi:nodetypes="ccccccccc"
+								inkscape:export-filename="controls" inkscape:export-xdpi="96"
+								inkscape:export-ydpi="96" />
+							<path
+								style="fill:none;stroke:#cacaca;stroke-width:0.0811258;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+								d="m 42.797506,138.45275 3.200622,-2.84211 v -1.63887 l 0.930063,-0.9568 1.422713,-0.039 v 0.33193 l -0.869045,0.89204 0.890242,0.91279 0.932632,-0.72609 0.381526,-0.12447 -0.08479,1.28621 -1.038612,1.05801 -1.6533,-0.0208 -2.649518,2.8421 -0.996224,0.083 -0.275546,-0.24894 z"
+								id="path24" sodipodi:nodetypes="ccccccccccccccccc" />
+							<path id="path3"
+								style="fill:#008080;fill-opacity:1;stroke:#fff3f3;stroke-width:0.00269467;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+								d="m 48.320419,133.01634 -0.598838,0.013 c -0.329333,0.007 -0.63921,0.0181 -0.688698,0.0241 -0.08522,0.0103 -0.114209,0.0357 -0.545897,0.47769 l -0.455804,0.46679 -10e-4,0.82336 -9.53e-4,0.82335 -1.580338,1.40037 c -0.869191,0.77016 -1.584675,1.41058 -1.589858,1.4232 -0.0052,0.0127 0.02942,0.19001 0.07686,0.39418 l 0.08626,0.37123 0.132004,0.11942 h 1.19e-4 c 0.130781,0.11828 0.133043,0.11943 0.238003,0.10875 0.05829,-0.006 0.272921,-0.0247 0.476934,-0.0416 l 0.370936,-0.0308 0.06363,-0.0697 c 0.02424,-0.0266 0.318033,-0.34248 0.727037,-0.78175 0.181097,-0.1945 0.384779,-0.4132 0.597651,-0.64169 l 1.261182,-1.35366 0.826625,0.0143 0.826739,0.0143 0.510487,-0.52384 0.510602,-0.52394 0.03773,-0.5886 c 0.02075,-0.32373 0.03344,-0.59268 0.02821,-0.59781 -0.0052,-0.005 -0.07641,0.013 -0.158243,0.0402 -0.129589,0.0431 -0.209768,0.097 -0.621709,0.41782 -0.333003,0.25932 -0.481086,0.36278 -0.500386,0.34975 -0.03275,-0.0222 -0.906762,-0.92003 -0.913931,-0.93892 -0.0028,-0.007 0.194938,-0.2185 0.439318,-0.46952 l 0.444427,-0.45645 4.75e-4,-0.13169 z"
+								sodipodi:nodetypes="ccscccccsccccscccsccccccsssssscccc" />
+							<path
+								style="fill:#008080;fill-opacity:1;stroke:#fff3f3;stroke-width:0.00190541;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+								d="m 47.186062,138.62222 c -0.06349,-0.32364 -0.117516,-0.59048 -0.120063,-0.59296 -0.0025,-0.003 -0.287832,-0.0382 -0.633965,-0.0792 -0.346134,-0.0411 -0.6375,-0.0763 -0.647481,-0.0781 -0.01,-0.002 0.242889,-0.28335 0.56193,-0.62551 l 0.580075,-0.62211 0.826935,0.009 0.826935,0.009 0.528681,-0.53694 0.528679,-0.53696 0.04143,-0.61779 c 0.02279,-0.33979 0.04174,-0.64535 0.04213,-0.67903 l 7.02e-4,-0.0613 -0.221072,0.0727 -0.221073,0.0727 -0.449638,0.35188 -0.449639,0.35187 -0.179855,-0.18133 c -0.09892,-0.0997 -0.288841,-0.29316 -0.422045,-0.42985 l -0.24219,-0.24852 0.425792,-0.43756 0.425792,-0.43755 v -0.195 -0.19502 l -0.05621,0.006 c -0.03092,0.003 -0.363083,0.0128 -0.738157,0.0219 l -0.681952,0.0163 -0.210296,0.21512 c -0.115663,0.11832 -0.329574,0.33725 -0.475359,0.4865 l -0.265063,0.27139 -7.84e-4,0.82147 -7.85e-4,0.82147 -0.655446,0.58167 c -0.578512,0.51341 -0.656643,0.57797 -0.66565,0.5501 -0.0056,-0.0174 -0.05554,-0.23952 -0.110955,-0.49367 -0.05541,-0.25414 -0.10815,-0.4694 -0.117193,-0.47835 -0.009,-0.009 -0.259246,-0.0506 -0.556008,-0.0925 -0.296761,-0.0419 -0.580769,-0.083 -0.631126,-0.0913 l -0.09156,-0.015 -0.01096,-0.54272 c -0.0061,-0.29851 -0.0081,-0.54562 -0.0044,-0.54914 0.0036,-0.004 0.309034,-0.0657 0.678742,-0.13817 0.369708,-0.0724 0.676818,-0.13675 0.682469,-0.14283 0.01221,-0.0131 0.283629,-0.87161 0.283629,-0.89707 0,-0.0142 -0.338378,-0.48059 -0.646801,-0.8916 l -0.05701,-0.076 0.457113,-0.4081 c 0.251412,-0.22446 0.463541,-0.41024 0.471398,-0.41286 0.0079,-0.003 0.232714,0.10462 0.499685,0.2383 l 0.485402,0.24306 0.462999,-0.10468 c 0.25465,-0.0575 0.469744,-0.11266 0.477988,-0.12242 0.0082,-0.01 0.06507,-0.31083 0.12629,-0.66905 0.06122,-0.35821 0.113134,-0.6537 0.115372,-0.65664 0.0023,-0.003 0.297528,0.003 0.656198,0.0135 0.437378,0.0126 0.654048,0.024 0.657962,0.0346 0.0032,0.008 0.05178,0.28323 0.107938,0.60999 l 0.102103,0.59413 0.455171,0.12977 c 0.299482,0.0854 0.461434,0.12513 0.473479,0.11616 0.168375,-0.12525 0.911141,-0.64938 0.92027,-0.64938 0.0068,0 0.213971,0.19728 0.460228,0.43839 0.323345,0.31661 0.444256,0.44396 0.435199,0.45841 -0.0069,0.011 -0.137044,0.19813 -0.289211,0.41583 -0.152169,0.2177 -0.27636,0.40253 -0.275981,0.41074 0.0011,0.0237 0.452708,0.93868 0.465195,0.94253 0.01143,0.004 1.144096,0.16511 1.157811,0.16517 0.01288,6e-5 -0.04938,1.25381 -0.06271,1.26259 -0.0069,0.005 -0.277606,0.0534 -0.601469,0.10865 l -0.588841,0.10033 -0.193028,0.41938 c -0.106166,0.23065 -0.199497,0.43614 -0.207403,0.45664 -0.01287,0.0334 0.01837,0.0885 0.299645,0.52869 l 0.314017,0.49142 -0.392567,0.39253 -0.392568,0.39253 -0.442069,-0.27205 c -0.243138,-0.14962 -0.45175,-0.27205 -0.463582,-0.27205 -0.04383,0 -1.035189,0.29031 -1.045134,0.30606 -0.0057,0.009 -0.04936,0.26561 -0.09707,0.57026 -0.04771,0.30466 -0.09024,0.56878 -0.09452,0.58692 l -0.0078,0.033 -0.60164,-5e-5 -0.60164,-7e-5 z"
+								id="path4" />
+							<path
+								style="fill:none;stroke:#eadcdc;stroke-width:0.347841;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+								d="m 44.627028,136.85622 -0.239806,-1.07962 -1.292965,-0.1867 -0.02119,-1.16174 1.37775,-0.26969 0.275552,-0.87129 -0.720673,-0.97503 0.975027,-0.8713 0.996217,0.49788 0.911434,-0.20745 0.233157,-1.34844 1.37775,0.0415 0.211967,1.22397 0.869038,0.24894 0.953829,-0.68459 0.953829,0.93353 -0.593493,0.85055 0.445117,0.9128 1.186987,0.16596 -0.06359,1.3277 -1.208177,0.20745 -0.40273,0.8713 0.635888,0.99577 -0.826651,0.82982 -0.911434,-0.56013 -1.017421,0.29043 -0.190763,1.20323 h -1.271765 l -0.233158,-1.18248 -1.355309,-0.16137"
+								id="path23" sodipodi:nodetypes="cccccccccccccccccccccccccccccc"/>
+						</g>
+					</svg>
+				</a>
+				<span>Controls</span>
+			  </li>
+			  <li class="tool-list" id="graphListItem">
+				<img id="graphbutton" class="" style="cursor: pointer;" onclick="drawgraphh()"
+					src="./images/graphbutton (1).svg" alt="" class="icons" />
+				<span>Graph</span>
+			</li>
+			</ul>
+		  </div>
+		  <div class="main">
+			<div class="main-section">
+				<div id="simulation" class="main__task-div">
+					
+					  <h3 class="task-title">Simulation</h3>
+					  <!-- <div id="controls" class="div__control">
+						<img id="playpausebutton" onclick="simstate()" src="images/bluepausedull.png" alt="" />
+						<img id="rotationbutton" onclick="rotstate()" src="images/bluecwdull.png" />
+					  </div> -->
+					
+					<div class="canvas__div">
+					
+					   
+						<div id="canvas-container">
+							<canvas id="simscreen" class="canvas" style="margin-top: 36px;
+							border: none;"></canvas>
+						  </div>
+						<!-- <div id="titleincanvas" class="canvas-item"></div>
+					   <div class="canvas-item">
+						<canvas id="simscreen" height="400px"></canvas>
+						</div>
+						<div class="canvas-item"> -->
+							<div  id="myImg" class="img-div">
+								<div class="circuit-dia">
+									<p id="fb">Free Body Diagram</p>
+								<!-- <p id="eqn" style="font-size: 24px; font-family: Comic Sans MS;display:none">
+									N<sup>2</sup>
+									&alpha; <span
+										class="frac"><sup>1</sup><span>&frasl;</span><sub>h</sub></span>
+								</p> -->
+								<p id="eqn"style="visibility:hidden">N<sup>2</sup> &alpha; <span class="frac"><sup>1</sup><span>&frasl;</span><sub>h</sub></span></p>
+								<!-- Used mathstyle.css file to display equation -->
+								<img src="images/FBD_porter.png"  />
+								<div id="graph" ></div>
+								</div>
+							  </div>
+						
+						<!-- </div> -->
+						<!-- Experiments Questions Section -->
+						<div id="exp" class="fontClass" style="display: none;">
+							<fieldset>
+								<legend id="expTitle" class="fontClass">Choose one of the experiments</legend>
+								<ul type="none" class="fontClass">
+								  <li><input type="radio" id = "calc" name="expt" value="calc" autocomplete="off"  style="margin-right: 5px;">Calculation</li>
+								  <li><input type="radio" id = "gParts" name="expt" value="gParts" autocomplete="off" style="margin-right: 5px;">Identify Parts of Governor</li>
+								</ul>
+							  </fieldset>
+						</div>
+						<!-- Questions Division -->
+				<div id="questionsSet" class="fontClass" style="display: none;">
+					<div id="qHeight" class="questionDivision">
+						<label for="calcHeight">Find the Height(mm): <input id="calcHeight" type="text"
+								autocomplete="off" value="" oninput="resetValues();"><span id="hspan"></span></label>
+						<label for="check1"><input id="check1" type="button" value="CHECK" onclick="evalHeight()" />
+					</div>
+					<div id="qMass" class="questionDivision">
+						<label for="calcMass">Find the Mass(kg): <input id="calcMass" type="text" autocomplete="off"
+								value="" oninput="resetValues();"><span id="mspan"></span></label>
+						<label for="check2"><input id="check2" type="button" value="CHECK" onclick="evalMass()" />
+					</div>
+					<div id="qRpm" class="questionDivision">
+						<label for="calcRpm">Find the n(rpm): <input id="calcRpm" type="text" autocomplete="off"
+								value="" oninput="resetValues();"><span id="rspan"></span></label>
+						<label for="check3"><input id="check3" type="button" value="CHECK" onclick="evalRpm()" />
+					</div>
+				</div>
+				<!-- Pivot  -->
+				<!-- Fly Ball -->
+				<!-- Connecting Rod -->
+				<!-- Spindle -->
+				<!-- Sleeve -->
+				<!-- Extended Arm -->
+				<!-- Arm -->
+				<div id="dropDownSet" style="display: none;">
+					<img src="images/expImage.png" id="partImage"  />
+					<p class="fontClass" id="partTitle">Identify Parts of Governor</p>
+					<div id="dropPivot">
+						<select id="pivot" onchange="evaluateParts(this);">
+							<option></option>
+							<option>Fly Ball</option>
+							<option>Spindle</option>
+							<option>Pivot</option>
+							<option>Extended Arm</option>
+						</select>
+					</div>
+					<div id="dropFlyBall">
+						<select id="flyBall" onchange="evaluateParts(this);">
+							<option></option>
+							<option>Arm</option>
+							<option>Pivot</option>
+							<option>Spindle</option>
+							<option>Fly Ball</option>
+						</select>
+					</div>
+					<div id="dropSleeve">
+						<select id="sleeve" onchange="evaluateParts(this);">
+							<option></option>
+							<option>Extended Arm</option>
+							<option>Spindle</option>
+							<option>Connecting Rod</option>
+							<option>Sleeve</option>
+						</select>
+					</div>
+					<div id="dropSpindle">
+						<select id="spindle" onchange="evaluateParts(this);">
+							<option></option>
+							<option>Pivot</option>
+							<option>Spindle</option>
+							<option>Fly Ball</option>
+							<option>Arm</option>
+						</select>
+					</div>
+					<div id="dropConnectingRod">
+						<select id="connectingRod" onchange="evaluateParts(this);">
+							<option></option>
+							<option>Extended Arm</option>
+							<option>Arm</option>
+							<option>Connecting Rod </option>
+							<option>Sleeve</option>
+						</select>
+					</div>
+					<div id="dropArm">
+						<select id="arm" onchange="evaluateParts(this);">
+							<option></option>
+							<option>Spindle</option>
+							<option>Arm</option>
+							<option>Pivot</option>
+							<option>Fly Ball</option>
+						</select>
+					</div>
+				</div>
+						
+				<div id="titleincanvas"></div>
+				<div id="commentboxleft"></div>
+				<div id="commentboxright"></div>	  
+		</div>
+				  </div>
+				  <div id="variables" class="main__task-div">
+					<div class="settings-sections">
+					  <h3 class="task-title">Variables</h3>
+						<div class="variables-sections">
+							<div class="var-div"  id = "mset">
+								<div class="input-container">
+								<label for="r1spinner">n</label>
+								<input class="var-spinner" id="nspinner" name="value" />
+								<span class="cm">(rpm)</span>
+							  </div>
+								<div class="var-slider" id="nslider"></div>
+							  </div>	
+					
+							  <div class="var-div">
+								<div class="input-container">
+								<label for="r1spinner">mass</label>
+								<input class="var-spinner" id="massspinner" name="value" />
+								<span class="cm">(kg)</span>
+							  </div>
+								<div class="var-slider" id="massslider"></div>
+							  </div>
+							  <div class="var-div">
+								<div class="input-container">
+									<label for="r1spinner">Height</label>
+									<!-- <p title="Height of the Governor">Height(mm)&nbsp; </p> -->
+									<input id="hval" type="textbox"
+										style="background-color:white;width:60px;color:black;margin-bottom:20px"
+										disabled></input>
+										<span class="cm">(mm)</span>
+							  </div>
+							  </div>
+					  </div>
+					</div>
+				  </div>
+				  
+				  <div id="comments" class="main__task-div">
+					<h3 class="task-title">Controls</h3>
+					<div class="settings-sections">
+					  <div class="comment-sections">
+						<!-- Checkbox to display graph-->
+						<div class="usercheck" style="opacity: 0;">
+						  <input type="checkbox" id="cb" onclick="drawgraphh();" /><p id="sg">Show Graph</p>
+						</div>
+						<div class="buttonSet">
+						  <div>
+							<input type="button" id="goToExperiment" onclick="setExperiments();" value="Go to Experiment" /> 
+							<!-- To select the experiments -->
+						  </div>
+						  <div>
+							<input type="button" style="display: none;" id="startExperiment" onclick="startExperiments();" value="Start Experiment" /> 
+							<!-- To start with experiments -->
+						  </div>
+						  <div>
+							<input type="button" style="display: none;" id="exitExperiment" onclick="exitExperiments();" value="Exit Experiment" /> 
+							<!-- To exit from experiments -->
+						  </div>
+						  <div>
+							<input type="button" style="display: none;" id="goSimulator" onclick="goToSimulator();" value="Go To Simulator" /> 
+							<!-- To exit from experiments -->
+						  </div>
+						  <div>
+							<input type="button" style="display: none;" id="resetExperiment" onclick="resetExperiments();" value="Reset Experiment" /> 
+							<!-- To reset experiments -->
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  </div>
+				<div class="main__task-div footer copytext">
+					<p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+				  </div>
+			</div>
+			</div>
+
+	
+<script src="../assets/js/iframeResize.js"></script></body>
+
+</html>
